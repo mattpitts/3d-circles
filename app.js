@@ -20,10 +20,10 @@ $(document).ready(function() {
 			'left': '25vw',
 			'top': '5vw'
 		});
-		frontCircleXPos = Number($('.frontCircle').css("left").substring(0,$('.frontCircle').css("left").length-2));
-		frontCircleYPos = Number($('.frontCircle').css("top").substring(0,$('.frontCircle').css("top").length-2));
-		middleCircleXPos = Number($('.middleCircle').css("left").substring(0,$('.middleCircle').css("left").length-2));
-		middleCircleYPos = Number($('.middleCircle').css("top").substring(0,$('.middleCircle').css("top").length-2));
+		frontCircleXPos = Number($('.frontCircle').css("left").replace(/[^0-9]/g, ''));
+		frontCircleYPos = Number($('.frontCircle').css("top").replace(/[^0-9]/g, ''));
+		middleCircleXPos = Number($('.middleCircle').css("left").replace(/[^0-9]/g, ''));
+		middleCircleYPos = Number($('.middleCircle').css("top").replace(/[^0-9]/g, ''));
 		width = $(window).width();
 		height = $(window).height();
 	}
