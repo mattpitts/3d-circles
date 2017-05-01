@@ -1,8 +1,16 @@
+
+body {
+	background-color: #68a2ff;
+}
+.background {
+	position: absolute;
+	left: -30vw;
+}
 .background div {
 	border-radius: 50%;
 	background-color: black;
 	position: absolute;
-	opacity: 0.3;
+	opacity: 0.03;
 }
 .backCircle {
 	width: 30vw;
